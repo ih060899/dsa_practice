@@ -8,6 +8,8 @@ public class ArraysMain {
         numbers.insert(30);
         numbers.insert(40);
         numbers.insert(50);
+//        numbers.removeAt(4);
+        System.out.println(numbers.max());
         numbers.print();
     }
 }
