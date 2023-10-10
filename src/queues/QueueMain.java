@@ -1,7 +1,6 @@
 package queues;
 
 import java.util.ArrayDeque;
-import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -43,6 +42,20 @@ public class QueueMain {
 //        queue.add(20);
 //        while (!queue.isEmpty())
 //            System.out.println(queue.remove());
+
+        PriorityQueue queue = new PriorityQueue();
+        queue.add(10);
+        queue.add(30);
+        queue.add(25);
+        queue.add(31);
+        queue.add(20);
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+        System.out.println(queue);
+
 
     }
 
