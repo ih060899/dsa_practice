@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hashtables/CharFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashtables/HashTablesMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hashtables/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hashtables/HashTableExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hashtables/HashTablesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashtables/HashTablesMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/imran/IdeaProjects/dsa_practice/src/queues",
+    "last_opened_file_path": "/home/imran/dsa_practice/src/hashtables",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
