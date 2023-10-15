@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/problem/LeftRotateArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problem/RotateArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problem/SpiralOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,22 +57,9 @@
       <recent name="$PROJECT_DIR$/src/stacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RotateArray">
+  <component name="RunManager" selected="Application.SpiralOrder">
     <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problem.Factorial" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem.Fibonacci" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
@@ -112,6 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpiralOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.SpiralOrder" />
+      <module name="dsa_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThreeNPlusOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problem.ThreeNPlusOne" />
       <module name="dsa_practice" />
@@ -127,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpiralOrder" />
         <item itemvalue="Application.RotateArray" />
         <item itemvalue="Application.LeftRotateArray" />
         <item itemvalue="Application.ThreeNPlusOne" />
         <item itemvalue="Application.Factorial" />
-        <item itemvalue="Application.Fibonacci" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +154,7 @@
       <workItem from="1696905924919" duration="51000" />
       <workItem from="1696906362149" duration="8944000" />
       <workItem from="1697034278846" duration="7587000" />
+      <workItem from="1697374019042" duration="386000" />
     </task>
     <servers />
   </component>
