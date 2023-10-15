@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/problem/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problem/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/problem/PrimeNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problem/LeftRotateArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/problem/RotateArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem/ThreeNPlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/ThreeNPlusOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <recent name="$PROJECT_DIR$/src/stacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreeNPlusOne">
+  <component name="RunManager" selected="Application.RotateArray">
     <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problem.Factorial" />
       <module name="dsa_practice" />
@@ -87,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.InsertionSort" />
+    <configuration name="LeftRotateArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.LeftRotateArray" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sort.*" />
+          <option name="PATTERN" value="problem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problem.PrimeNumbers" />
+    <configuration name="RotateArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem.RotateArray" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RotateArray" />
+        <item itemvalue="Application.LeftRotateArray" />
         <item itemvalue="Application.ThreeNPlusOne" />
         <item itemvalue="Application.Factorial" />
         <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.PrimeNumbers" />
-        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
   </component>
