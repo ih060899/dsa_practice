@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searching/ExponentialSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searching/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
