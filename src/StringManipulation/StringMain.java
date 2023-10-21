@@ -17,7 +17,16 @@ public class StringMain {
 //        String removeDuplicates = StringUtils.removeDuplicates("Trees are beautiful");
 //        System.out.println(removeDuplicates);
 
-        char result = StringUtils.getMaxOccuringChar("Traas are beautiful");
+//        char result = StringUtils.getMaxOccuringChar("Traas are beautiful");
+//        System.out.println(result);
+
+//        String ressult = StringUtils.capitalize("TODAY IS GREAT DAY.");
+//        System.out.println(ressult);
+
+//        boolean result = StringUtils.areAnagram2("ABCX", "DBCA");
+//        System.out.println(result);
+
+        boolean result = StringUtils.isPalindrome("ABBAC");
         System.out.println(result);
     }
 }

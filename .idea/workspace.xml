@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
+    <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" afterDir="false" />
     </list>
@@ -157,6 +158,7 @@
       <workItem from="1697374019042" duration="977000" />
       <workItem from="1697383706709" duration="1488000" />
       <workItem from="1697471393709" duration="3007000" />
+      <workItem from="1697889952888" duration="2371000" />
     </task>
     <servers />
   </component>

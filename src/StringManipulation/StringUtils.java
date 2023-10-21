@@ -106,4 +106,74 @@ public class StringUtils {
 //                frequencies.put(ch, 1);
 //        }
     }
+
+    public static String capitalize(String sentence) {
+        if (sentence == null || sentence.trim().isEmpty())
+            return "";
+        String[] words = sentence
+                .trim()
+                .replaceAll(" +", " ")
+                .split(" ");
+
+        for (int i = 0; i < words.length; i++) {
+            words[i] = words[i].substring(0, 1).toUpperCase() +
+                    words[i].substring(1).toLowerCase();
+        }
+
+        return String.join(" ", words);
+    }
+
+    public static boolean areAnagrams(String first, String second) {
+        if (first == null || second == null || first.length() != second.length())
+            return false;
+
+        char[] array1 = first.toLowerCase().toCharArray();
+        Arrays.sort(array1);
+
+        char[] array2 = second.toLowerCase().toCharArray();
+        Arrays.sort(array2);
+
+        return Arrays.equals(array1, array2);
+    }
+
+    public static boolean areAnagram2(String first, String second) {
+        if (first == null || second == null || first.length() != second.length())
+            return false;
+        final int ENGLISH_ALPHABET = 26;
+        int[] frequencies = new int[26];
+
+        first = first.toLowerCase();
+        for (int i = 0; i < first.length(); i++) {
+            frequencies[first.charAt(i) - 'a']++;
+        }
+
+        second = second.toLowerCase();
+        for (int i = 0; i < second.length(); i++) {
+            if (frequencies[second.charAt(i) - 'a'] == 0)
+                return false;
+
+            frequencies[second.charAt(i) - 'a']--;
+        }
+        return true;
+    }
+
+    public static boolean isPalindrome(String word) {
+//        StringBuilder input = new StringBuilder(word);
+//        input.reverse();
+//        return input.toString().equals(word);
+
+        if (word == null)
+            return false;
+
+        int left = 0;
+        int right = word.length() - 1;
+        while (left < right) {
+            if (word.charAt(left++) != word.charAt(right--))
+                return false;
+        }
+
+        return true;
+    }
+
+
 }
