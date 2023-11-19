@@ -37,7 +37,7 @@ public class BinarySearch {
     }
 
 
-    private static int binarySearchRac(int[] array, int target, int left, int right) {
+    public static int binarySearchRac(int[] array, int target, int left, int right) {
         if (right < left)
             return -1;
         int middle = (left + right) / 2;

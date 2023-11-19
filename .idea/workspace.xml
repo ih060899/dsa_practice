@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="init">
     <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/binary_tree/RecursionMain.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/binary_tree/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,26 +63,13 @@
       <recent name="$PROJECT_DIR$/src/stacks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RecursionMain">
+  <component name="RunManager" selected="Application.BinarySearch">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="searching.BinarySearch" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="searching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binary_tree.BinaryTreeMain" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="binary_tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.LinearSearch" />
+    <configuration name="CountSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.CountSort" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +103,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursionMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binary_tree.RecursionMain" />
+    <configuration name="StringMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringManipulation.StringMain" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="binary_tree.*" />
+          <option name="PATTERN" value="StringManipulation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.QuickSort" />
+      <module name="dsa_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,6 +133,10 @@
       <list>
         <item itemvalue="Application.RecursionMain" />
         <item itemvalue="Application.BinaryTreeMain" />
+        <item itemvalue="Application.StringMain" />
+        <item itemvalue="Application.ExponentialSearch" />
+        <item itemvalue="Application.JumpSearch" />
+        <item itemvalue="Application.TernarySearch" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LinearSearch" />
         <item itemvalue="Application.BucketSort" />
@@ -160,7 +167,7 @@
       <workItem from="1697374019042" duration="977000" />
       <workItem from="1697383706709" duration="1488000" />
       <workItem from="1697471393709" duration="3007000" />
-      <workItem from="1700365270464" duration="2169000" />
+      <workItem from="1697889952888" duration="2371000" />
     </task>
     <servers />
   </component>
