@@ -4,124 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="init">
-    <list default="true" id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/binary_tree/RecursionMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/binary_tree/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5b85ad3c-3844-4ae6-8a90-bb9ed0bedf39" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringManipulation/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binary_tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_tree/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2WHeRtnrkVUz6YJZ6oxHCvGsfR8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/imran/dsa_practice/src/hashtables&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/hashtables" />
-      <recent name="$PROJECT_DIR$/src/queues" />
-      <recent name="$PROJECT_DIR$/src/stacks" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.BinarySearch">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.BinarySearch" />
+}]]></component>
+  <component name="RunManager">
+    <configuration name="BinaryTreeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binary_tree.BinaryTreeMain" />
       <module name="dsa_practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BucketSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.BucketSort" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.CountSort" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="searching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringManipulation.StringMain" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringManipulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.QuickSort" />
-      <module name="dsa_practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sort.*" />
+          <option name="PATTERN" value="binary_tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,82 +49,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RecursionMain" />
         <item itemvalue="Application.BinaryTreeMain" />
-        <item itemvalue="Application.StringMain" />
-        <item itemvalue="Application.ExponentialSearch" />
-        <item itemvalue="Application.JumpSearch" />
-        <item itemvalue="Application.TernarySearch" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.LinearSearch" />
-        <item itemvalue="Application.BucketSort" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="354e3da6-80bf-4864-a3b8-03e1e47357f8" name="Changes" comment="" />
-      <created>1696393930639</created>
+      <changelist id="5b85ad3c-3844-4ae6-8a90-bb9ed0bedf39" name="Changes" comment="" />
+      <created>1700665076173</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696393930639</updated>
-      <workItem from="1696393931693" duration="729000" />
-      <workItem from="1696496015762" duration="1858000" />
-      <workItem from="1696504077669" duration="669000" />
-      <workItem from="1696513101478" duration="60000" />
-      <workItem from="1696513202602" duration="14000" />
-      <workItem from="1696513232864" duration="653000" />
-      <workItem from="1696660467261" duration="604000" />
-      <workItem from="1696672415822" duration="11862000" />
-      <workItem from="1696819073449" duration="5091000" />
-      <workItem from="1696848304874" duration="3052000" />
-      <workItem from="1696905924919" duration="51000" />
-      <workItem from="1696906362149" duration="8944000" />
-      <workItem from="1697034278846" duration="7587000" />
-      <workItem from="1697374019042" duration="977000" />
-      <workItem from="1697383706709" duration="1488000" />
-      <workItem from="1697471393709" duration="3007000" />
-      <workItem from="1697889952888" duration="2371000" />
+      <updated>1700665076173</updated>
+      <workItem from="1700665078544" duration="3794000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sort/CountSort.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

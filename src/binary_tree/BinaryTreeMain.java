@@ -1,6 +1,5 @@
 package binary_tree;
 
-import java.io.FilterOutputStream;
 
 public class BinaryTreeMain {
     public static void main(String[] args) {
@@ -12,6 +11,16 @@ public class BinaryTreeMain {
         tree.insert(6);
         tree.insert(8);
         tree.insert(10);
-        System.out.println(tree.find(4));
+//        System.out.println(tree.find(4));
+//        tree.traversePreOrder();
+//        System.out.println();
+//        tree.traverseInOrder();
+//        System.out.println();
+//        tree.traverseInOrderDesc();
+//        System.out.println();
+//        tree.traversePostOrder();
+
+//        System.out.println(tree.height());
+        System.out.println(tree.min());
     }
 }
