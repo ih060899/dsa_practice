@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b85ad3c-3844-4ae6-8a90-bb9ed0bedf39" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_tree/BinaryTreeMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/binary_tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binary_tree/Tree.java" afterDir="false" />
@@ -30,6 +29,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

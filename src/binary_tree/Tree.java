@@ -1,5 +1,8 @@
 package binary_tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tree {
     private Node root;
 
@@ -135,6 +138,76 @@ public class Tree {
         var right = min(root.rightChild);
         return Math.min(root.value, Math.min(left, right));
     }
+
+    public boolean equals(Tree other) {
+        if (other == null)
+            return false;
+
+        return equals(root, other.root);
+    }
+
+    // PreOrder Traversal
+    private boolean equals(Node first, Node second) {
+        if (first == null && second == null)
+            return true;
+        if (first != null && second != null)
+            return first.value == second.value &&
+                    equals(first.leftChild, second.leftChild) &&
+                    equals(first.rightChild, second.rightChild);
+
+        return false;
+    }
+
+    public boolean isBinarySearchTree() {
+        return isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    public void swapRoot() {
+        var temp = root.leftChild;
+        root.leftChild = root.rightChild;
+        root.rightChild = temp;
+    }
+
+    // Preorder Traversal
+    private boolean isBinarySearchTree(Node root, int min, int max) {
+        if (root == null)
+            return true;
+
+        if (root.value < min || root.value > max)
+            return false;
+        return isBinarySearchTree(root.leftChild, min, root.value - 1) &&
+                isBinarySearchTree(root.rightChild, root.value + 1, max);
+    }
+
+    public List<Integer> getNodesAtDistance(int distance) {
+        List<Integer> list = new ArrayList<>();
+        getNodesAtDistance(root, distance, list);
+        return list;
+    }
+
+    private void getNodesAtDistance(Node root, int distance, List<Integer> list) {
+        if (root == null)
+            return;
+
+        if (distance == 0) {
+            list.add(root.value);
+            return;
+        }
+
+        getNodesAtDistance(root.leftChild, distance - 1, list);
+        getNodesAtDistance(root.rightChild, distance - 1, list);
+    }
+
+    // Breadth First
+    public void traverseLevelOrder(){
+        for (int i = 0; i <= height(); i++) {
+            for (int value: getNodesAtDistance(i)) {
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+
 
     private class Node {
         private int value;
