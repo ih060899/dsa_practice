@@ -37,7 +37,7 @@ public class BinaryTreeMain {
 //        tree.swapRoot();
 //        System.out.println(tree.isBinarySearchTree());
 
-//        System.out.println(tree.getNodesAtDistance(2));
+        System.out.println(tree.getNodesAtDistance(2));
 
         tree.traverseLevelOrder();
     }
