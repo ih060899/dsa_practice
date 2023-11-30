@@ -12,11 +12,11 @@ public class HeapMain {
 //        heap.insert(22);
 //        heap.remove();
 
-        int[] numbers = {5, 3, 10, 1, 4, 2};
-        Heap heap = new Heap();
-        for (int number : numbers) {
-            heap.insert(number);
-        }
+//        int[] numbers = {5, 3, 10, 1, 4, 2};
+//        Heap heap = new Heap();
+//        for (int number : numbers) {
+//            heap.insert(number);
+//        }
 
 //        while (!heap.isEmpty())
 //            System.out.println(heap.remove());
@@ -24,9 +24,15 @@ public class HeapMain {
 //            numbers[i] = heap.remove();
 //        }
 
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            numbers[i] = heap.remove();
-        }
-        System.out.println(Arrays.toString(numbers));
+//        for (int i = numbers.length - 1; i >= 0; i--) {
+//            numbers[i] = heap.remove();
+//        }
+//        System.out.println(Arrays.toString(numbers));
+
+        int[] numbers = {5, 3, 8, 4, 1, 2};
+//        MaxHeap.heapify(numbers);
+//        System.out.println(Arrays.toString(numbers));
+
+        System.out.println(MaxHeap.getKthLargest(numbers, 6));
     }
 }
