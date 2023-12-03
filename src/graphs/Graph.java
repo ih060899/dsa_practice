@@ -4,12 +4,12 @@ import java.util.*;
 
 public class Graph {
     private Map<String, Node> nodes = new HashMap<>();
-    private Map<Node, List<Node>> adjecencyList = new HashMap<>();
+    private Map<Node, List<Node>> adjacencyList = new HashMap<>();
 
     public void addNode(String label) {
         var node = new Node(label);
         nodes.putIfAbsent(label, node);
-        adjecencyList.putIfAbsent(node, new ArrayList<>());
+        adjacencyList.putIfAbsent(node, new ArrayList<>());
     }
 
     public void addEdge(String from, String to) {
@@ -20,12 +20,12 @@ public class Graph {
         if (toNode == null)
             throw new IllegalArgumentException();
 
-        adjecencyList.get(fromNode).add(toNode);
+        adjacencyList.get(fromNode).add(toNode);
     }
 
     public void print() {
-        for (Node source : adjecencyList.keySet()) {
-            List<Node> targets = adjecencyList.get(source);
+        for (Node source : adjacencyList.keySet()) {
+            List<Node> targets = adjacencyList.get(source);
             if (!targets.isEmpty())
                 System.out.println(source + " is connected to " + targets);
         }
@@ -35,11 +35,11 @@ public class Graph {
         Node node = nodes.get(label);
         if (node == null)
             return;
-        for (Node n : adjecencyList.keySet()) {
-            adjecencyList.get(n).remove(node);
+        for (Node n : adjacencyList.keySet()) {
+            adjacencyList.get(n).remove(node);
         }
 
-        adjecencyList.remove(node);
+        adjacencyList.remove(node);
         nodes.remove(node);
     }
 
@@ -50,7 +50,7 @@ public class Graph {
         if (fromNode == null || toNode == null)
             return;
 
-        adjecencyList.get(fromNode).remove(toNode);
+        adjacencyList.get(fromNode).remove(toNode);
     }
 
     public void traverseDepthFirstRec(String root) {
@@ -64,7 +64,7 @@ public class Graph {
         System.out.println(root);
         visited.add(root);
 
-        for (Node node : adjecencyList.get(root)) {
+        for (Node node : adjacencyList.get(root)) {
             if (!visited.contains(node))
                 traverseDepthFirstRec(node, visited);
         }
@@ -88,7 +88,7 @@ public class Graph {
             System.out.println(current);
             visited.add(current);
 
-            for (Node neighbour : adjecencyList.get(current)) {
+            for (Node neighbour : adjacencyList.get(current)) {
                 if (!visited.contains(neighbour))
                     stack.push(neighbour);
             }
@@ -111,7 +111,7 @@ public class Graph {
             System.out.println(current);
             visited.add(current);
 
-            for (Node neighbour : adjecencyList.get(current)) {
+            for (Node neighbour : adjacencyList.get(current)) {
                 if (!visited.contains(neighbour))
                     queue.add(neighbour);
             }
@@ -151,7 +151,7 @@ public class Graph {
     private boolean hasCycle(Node node, Set<Node> all, Set<Node> visiting, Set<Node> visited) {
         all.remove(node);
         visiting.add(node);
-        for (Node neighbour : adjecencyList.get(node)) {
+        for (Node neighbour : adjacencyList.get(node)) {
             if (visited.contains(neighbour))
                 continue;
 
@@ -173,7 +173,7 @@ public class Graph {
             return;
         visited.add(node);
 
-        for (Node neighbour : adjecencyList.get(node))
+        for (Node neighbour : adjacencyList.get(node))
             topologicalSort(neighbour, visited, stack);
 
         stack.push(node);
