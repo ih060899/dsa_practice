@@ -8,9 +8,9 @@ public class LongestPalindromicSubstring {
         if (len < 2)
             return s;
 
-        for (int i = 0; i < len-1; i++) {
+        for (int i = 0; i < len - 1; i++) {
             extendPalindrome(s, i, i);  //assume odd length, try to extend Palindrome as possible
-            extendPalindrome(s, i, i+1); //assume even length.
+            extendPalindrome(s, i, i + 1); //assume even length.
         }
         return s.substring(lo, lo + maxLen);
     }
@@ -28,27 +28,27 @@ public class LongestPalindromicSubstring {
 
 
     public static void expandPalindrome(char[] s, int j, int k) {
-        while(j >= 0 && k < s.length && s[j] == s[k]) {
+        while (j >= 0 && k < s.length && s[j] == s[k]) {
             j--;
             k++;
         }
-        if(maxLen < k-j-1) {
-            maxLen = k-j-1;
-            lo = j+1;
+        if (maxLen < k - j - 1) {
+            maxLen = k - j - 1;
+            lo = j + 1;
         }
     }
 
     public static String longestPalindrome1(String s) {
         char[] input = s.toCharArray();
-        if(s.length() < 2) {
+        if (s.length() < 2) {
             return s;
         }
 
-        for(int i = 0; i<input.length; i++) {
+        for (int i = 0; i < input.length; i++) {
             expandPalindrome(input, i, i);
-            expandPalindrome(input, i, i+1);
+            expandPalindrome(input, i, i + 1);
         }
-        return s.substring(lo, lo+maxLen);
+        return s.substring(lo, lo + maxLen);
     }
 
     public static void main(String[] args) {
