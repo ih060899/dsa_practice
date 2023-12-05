@@ -75,8 +75,23 @@ public class LongestPalindromicSubstring {
         return s.substring(lo, lo + maxLen);
     }
 
+    public static boolean palindrome(String str){
+        char[] input = str.toCharArray();
+        int startIndex = 0;
+        int endIndex = input.length - 1;
+        while (startIndex < endIndex){
+            if (input[startIndex] != input[endIndex])
+                return false;
+            startIndex++;
+            endIndex--;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
-        System.out.println(longestPalindrome1("babad"));
-        System.out.println(longestPalindrome1("cbbd"));
+//        System.out.println(longestPalindrome1("babad"));
+//        System.out.println(longestPalindrome1("cbbd"));
+        System.out.println(palindrome("abcba"));
+
     }
 }
