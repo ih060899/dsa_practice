@@ -31,9 +31,7 @@ public class ReverseInteger {
         while (x != 0) {
             int pop = x % 10;
             x /= 10;
-            if (rev > Integer.MAX_VALUE/10)
-                return 0;
-            if (rev < Integer.MIN_VALUE/10)
+            if (rev > Integer.MAX_VALUE/10 || rev < Integer.MIN_VALUE/10)
                 return 0;
             rev = rev * 10 + pop;
         }
@@ -44,25 +42,21 @@ public class ReverseInteger {
         long finalNum = 0;
         while(x!=0){
             int lastDig = x%10;
-            finalNum += lastDig;
-            finalNum = finalNum*10;
+            finalNum = finalNum*10 + lastDig;
             x= x/10;
         }
-        finalNum = finalNum/10;
-        if(finalNum > Integer.MAX_VALUE || finalNum<Integer.MIN_VALUE){
+        if(finalNum > Integer.MAX_VALUE || finalNum  < Integer.MIN_VALUE){
             return 0;
         }
-        if(x<0){
-            return (int)(-1*finalNum);
-        }
-        return (int)finalNum;
+        return (int) finalNum;
     }
 
     public static void main(String[] args) {
-        System.out.println(reverse(123));
-        System.out.println(reverse(-123));
-        System.out.println(reverse(120));
-        System.out.println(reverse(1534236469));
+        System.out.println(reverse1(123));
+        System.out.println(reverse1(-123));
+        System.out.println(reverse1(120));
+        System.out.println(reverse1(1534236469));
+        System.out.println(reverse1(-2147483412));
 //        System.out.println(Integer.MAX_VALUE/10);
     }
 }
