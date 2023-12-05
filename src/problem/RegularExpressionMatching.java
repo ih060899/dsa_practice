@@ -70,12 +70,15 @@ public class RegularExpressionMatching {
             }
             return true;
         }
-        if(dp[sIdx][pIdx]!=0) return dp[sIdx][pIdx]==1;
+        if(dp[sIdx][pIdx]!=0)
+            return dp[sIdx][pIdx]==1;
         char sCh = s.charAt(sIdx);
         char pCh = p.charAt(pIdx);
         boolean validity = false;
-        if(sCh==pCh) validity = isValid(sIdx-1,pIdx-1,s,p,dp);
-        else if(pCh=='.') validity = isValid(sIdx-1,pIdx-1,s,p,dp);
+        if(sCh==pCh)
+            validity = isValid(sIdx-1,pIdx-1,s,p,dp);
+        else if(pCh=='.')
+            validity = isValid(sIdx-1,pIdx-1,s,p,dp);
         else if(pCh=='*') {
             validity = isValid(sIdx,pIdx-2,s,p,dp);
             if(!validity && (p.charAt(pIdx-1) == sCh || p.charAt(pIdx-1)=='.')) {
