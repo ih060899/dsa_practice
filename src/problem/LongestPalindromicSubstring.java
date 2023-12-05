@@ -1,5 +1,30 @@
 package problem;
 
+//        5. Longest Palindromic Substring
+//        Given a string s, return the longest
+//        palindromic
+//
+//        substring
+//        in s.
+//
+//
+//
+//        Example 1:
+//
+//        Input: s = "babad"
+//        Output: "bab"
+//        Explanation: "aba" is also a valid answer.
+//        Example 2:
+//
+//        Input: s = "cbbd"
+//        Output: "bb"
+//
+//
+//        Constraints:
+//
+//        1 <= s.length <= 1000
+//        s consist of only digits and English letters.
+
 public class LongestPalindromicSubstring {
     private static int lo, maxLen;
 
@@ -44,8 +69,8 @@ public class LongestPalindromicSubstring {
         }
 
         for (int i = 0; i < input.length; i++) {
-            expandPalindrome(input, i, i);
-            expandPalindrome(input, i, i + 1);
+            expandPalindrome(input, i, i); //assume odd length, try to extend Palindrome as possible
+            expandPalindrome(input, i, i + 1); //assume even length.
         }
         return s.substring(lo, lo + maxLen);
     }
