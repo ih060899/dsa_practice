@@ -64,8 +64,6 @@ package problem;
 //        0 <= s.length <= 200
 //        s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
 
-import java.util.Set;
-
 public class StringToIntegerAtoi {
 
     public static int myAtoi1(String str) {
@@ -107,42 +105,52 @@ public class StringToIntegerAtoi {
         long out = 0;
         boolean numbersOnly = false;
         boolean sign = false;
-        for (int i=0; i<str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             char x = str.charAt(i);
-            if (!numbersOnly){
-                if (x == ' ') continue;
+            if (!numbersOnly) {
+                // Step 1
+                if (x == ' ')
+                    continue;
+
                 if (x == '+') {
                     sign = true;
                     numbersOnly = true;
-                }
-                else if (x == '-') {
+                } else if (x == '-') {
                     sign = false;
                     numbersOnly = true;
-                }
-                else if (x >= min && x <= max) {
+                } else if (x >= min && x <= max) {
                     sign = true;
                     numbersOnly = true;
-                    i -= 1;
-                }
-                else return 0;
+                    i--;
+                } else
+                    return 0;
             } else {
                 if (x < min || x > max)
-                    i = Integer.MAX_VALUE -1;
+                    break;
                 else {
                     int num = x - '0';
-                    if (x == 0) continue;
-                    out *= 10;
-                    out += num;
-                    if (out > Integer.MAX_VALUE) i = Integer.MAX_VALUE -1;
+//                    if (x == 0)
+//                        continue;
+                    out = (out * 10) + num;
+//                    out += num;
+                    if (out > Integer.MAX_VALUE)
+                        break;
                 }
 
             }
         }
+        // Step 2
         if (!sign) out *= -1;
-        if ( out > Integer.MAX_VALUE ) return Integer.MAX_VALUE;
-        else if ( out < Integer.MIN_VALUE ) return Integer.MIN_VALUE;
-        else return (int)out;
+        // Step 3
+        if (out > Integer.MAX_VALUE)
+            return Integer.MAX_VALUE;
+
+        if (out < Integer.MIN_VALUE)
+            return Integer.MIN_VALUE;
+
+        return (int) out;
     }
+
     public static void main(String[] args) {
         System.out.println(myAtoi("42"));
         System.out.println(myAtoi("   -42"));
