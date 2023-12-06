@@ -36,16 +36,44 @@ public class CalculateMoneyInLeetcodeBank {
         int week_count = n / 7;
         int remaining_days = n % 7;
 
-        int total = ((week_count * (week_count - 1)) / 2) * 7; // Contribution from complete weeks
-        total += week_count * 28; // Contribution from complete weeks (additional on Mondays)
-        total += ((remaining_days * (remaining_days + 1)) / 2) + (week_count * remaining_days); // Contribution from remaining days
+        // Contribution from complete weeks
+        int total = ((week_count * (week_count - 1)) / 2) * 7;
+        // Contribution from complete weeks (additional on Mondays)
+        total += week_count * 28;
+        // Contribution from remaining days
+        total += ((remaining_days * (remaining_days + 1)) / 2) + (week_count * remaining_days);
 
-        return total;
+//        return total;
+        return (((week_count * (week_count - 1)) / 2) * 7) +
+                (week_count * 28) +
+                (((remaining_days * (remaining_days + 1)) / 2) + (week_count * remaining_days));
+    }
+
+    public static int totalMoney1(int n) {
+        int numberOfWeeks = n/7;
+        int remainingDays = n%7;
+        int start = 1;
+        int sum = 0;
+        for(int i=0; i<numberOfWeeks; i++) {
+            // 7 days a week. If start = 1, then end should be 1 + 6 = 7
+            // similarly in next case when start = 2, end = 2+6 = 8
+            int end = start+6;
+            // Gauss Theorem. From start to end there's 7 numbers
+            int tmp = ((start+end)*7)/2;
+            sum += tmp;
+            // increase for next week
+            start++;
+        }
+        // if there's any remaining days
+        for(int i=0; i<remainingDays; i++) {
+            sum+=start++;
+        }
+        return sum;
     }
 
     public static void main(String[] args) {
-        System.out.println(totalMoney(4));
+        System.out.println(totalMoney(14));
         System.out.println(totalMoney(10));
-        System.out.println(totalMoney(20));
+        System.out.println(totalMoney1(26));
     }
 }
