@@ -28,9 +28,11 @@ import java.util.List;
 //        The number of nodes in the tree is in the range [0, 100].
 //        -100 <= Node.val <= 100
 
+
 public class BinaryTreeInorderTraversal {
     static List<Integer> ans = new ArrayList<>();
 
+    // In-order -> Left, Root, Right
     public static List<Integer> inorderTraversal(TreeNode root) {
         if (root == null) return ans;
         inorderTraversal(root.left);
@@ -38,6 +40,7 @@ public class BinaryTreeInorderTraversal {
         return inorderTraversal(root.right);
     }
 
+    // In-order -> Left, Root, Right
     public static List<Integer> inorderTraversal1(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         inorderTraversal1(root, res);
