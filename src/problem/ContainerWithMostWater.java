@@ -24,6 +24,9 @@ package problem;
 //        2 <= n <= 105
 //        0 <= height[i] <= 104
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ContainerWithMostWater {
     public static int maxArea(int[] height) {
         int max = Integer.MIN_VALUE;
@@ -44,8 +47,29 @@ public class ContainerWithMostWater {
 
     }
 
-    public static void main(String[] args) {
+    public int romanToInt(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+        // map.get(s.charAt(i) > map.get(s.charAt(i - 1)
+        int r = 0;
+        for(int i = 0; i<s.length();i++){
+            if(i > 0 && map.get(s.charAt(i)) > map.get(s.charAt(i - 1))) {
+                r += (map.get(s.charAt(i)) - 2 * map.get(s.charAt(i - 1)));
+            }
+            else{
+                r += map.get(s.charAt(i));
+            }
 
+        }
+        return r;
+    }
+
+    public static void main(String[] args) {
         int[] array = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(maxArea(array));
     }
