@@ -121,8 +121,16 @@ public class ThreeSum {
 
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
-        List<List<Integer>> result = threeSum(nums);
+        int[] nums1 = {0,1,1};
+        int[] nums2 = {0,0,0};
 
+
+        print(threeSum(nums));
+        print(threeSum(nums1));
+        print(threeSum(nums2));
+    }
+
+    private static void print(List<List<Integer>> result) {
         for (List<Integer> triplet : result) {
             System.out.println(triplet);
         }
