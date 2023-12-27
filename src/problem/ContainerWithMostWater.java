@@ -28,24 +28,25 @@ public class ContainerWithMostWater {
     public static int maxArea(int[] height) {
         int max = Integer.MIN_VALUE;
         int l = 0, r = height.length - 1;
-        while(l < r ) {
+        while (l < r) {
             max = Math.max(max, (r - l) * Math.min(height[r], height[l]));
-            if(height[l] <= height[r]) {
+            if (height[l] <= height[r]) {
                 int hl = height[l];
-                while(l < r && height[l] <= hl)
+                while (l < r && height[l] <= hl)
                     l++;
             } else {
                 int hr = height[r];
-                while(l < r && height[r] <=  hr)
+                while (l < r && height[r] <= hr)
                     r--;
             }
         }
         return max;
 
     }
+
     public static void main(String[] args) {
 
-        int[] array = {1,8,6,2,5,4,8,3,7};
+        int[] array = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(maxArea(array));
     }
 }
