@@ -25,6 +25,10 @@ package problem;
 //        0 <= strs[i].length <= 200
 //strs[i] consists of only lowercase English letters.
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class LongestCommonPrefix {
     public static String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
@@ -42,5 +46,7 @@ public class LongestCommonPrefix {
         String[] arr2 = {"dog", "racecar", "car"};
         System.out.println(longestCommonPrefix(arr1));
         System.out.println(longestCommonPrefix(arr2));
+        System.out.println(arr1[0].substring(0, arr1[0].length() - 1));
+
     }
 }

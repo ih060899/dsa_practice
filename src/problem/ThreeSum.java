@@ -87,6 +87,7 @@ public class ThreeSum {
         }
         return ans;
     }
+
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
@@ -102,8 +103,10 @@ public class ThreeSum {
                     if (nums[lo] + nums[hi] == target) {
                         result.add(Arrays.asList(nums[i], nums[lo], nums[hi]));
 
-                        while (lo < hi && nums[lo] == nums[lo + 1]) lo++;
-                        while (lo < hi && nums[hi] == nums[hi - 1]) hi--;
+                        while (lo < hi && nums[lo] == nums[lo + 1])
+                            lo++;
+                        while (lo < hi && nums[hi] == nums[hi - 1])
+                            hi--;
 
                         lo++;
                         hi--;
@@ -121,13 +124,13 @@ public class ThreeSum {
 
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
-        int[] nums1 = {0,1,1};
-        int[] nums2 = {0,0,0};
+        int[] nums1 = {0, 1, 1};
+        int[] nums2 = {0, 0, 0};
 
 
-        print(threeSum(nums));
-        print(threeSum(nums1));
-        print(threeSum(nums2));
+        print(threeSum1(nums));
+        print(threeSum1(nums1));
+        print(threeSum1(nums2));
     }
 
     private static void print(List<List<Integer>> result) {
@@ -135,5 +138,6 @@ public class ThreeSum {
             System.out.println(triplet);
         }
     }
+
 }
 
