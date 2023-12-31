@@ -31,18 +31,35 @@ package problem;
 //s contains only lowercase English letters.
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LargestSubstringBetweenTwoEqualCharacters {
+    public static int maxLengthBetweenEqualCharacters2(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        int ans = -1;
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (!map.containsKey(ch)) {
+                map.put(ch, i);
+            } else {
+                ans = Math.max(ans, i - 1 - map.get(ch));
+            }
+        }
+        return ans;
+    }
+
     public static int maxLengthBetweenEqualCharacters1(String s) {
         int[] map = new int[26];
         Arrays.fill(map, -1);
         int ans = -1;
-        for(int i=0; i<s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if(map[c-'a'] == -1){
-                map[c-'a'] = i;
+            if (map[c - 'a'] == -1) {
+                map[c - 'a'] = i;
             } else {
-                ans = Math.max(ans, i-map[c-'a']-1);
+                ans = Math.max(ans, i - map[c - 'a'] - 1);
             }
         }
         return ans;
@@ -52,7 +69,7 @@ public class LargestSubstringBetweenTwoEqualCharacters {
         int result = -1;
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j < s.length(); j++) {
-                if (s.charAt(i) == s.charAt(j)){
+                if (s.charAt(i) == s.charAt(j)) {
                     result = Math.max(result, j - i - 1);
                 }
             }
@@ -61,8 +78,9 @@ public class LargestSubstringBetweenTwoEqualCharacters {
     }
 
     public static void main(String[] args) {
-        System.out.println(maxLengthBetweenEqualCharacters1("aa"));
-        System.out.println(maxLengthBetweenEqualCharacters1("abca"));
-        System.out.println(maxLengthBetweenEqualCharacters1("cbzxy"));
+        System.out.println(maxLengthBetweenEqualCharacters2("aa"));
+        System.out.println(maxLengthBetweenEqualCharacters2("abca"));
+        System.out.println(maxLengthBetweenEqualCharacters2("cbzxy"));
+        System.out.println((int) 'a');
     }
 }
