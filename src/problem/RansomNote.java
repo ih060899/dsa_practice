@@ -35,11 +35,12 @@ public class RansomNote {
         int[] alphabets_counter = new int[26];
 
         for (char c : magazine.toCharArray())
-            alphabets_counter[c-'a']++;
+            alphabets_counter[c - 'a']++;
 
-        for (char c : ransomNote.toCharArray()){
-            if (alphabets_counter[c-'a'] == 0) return false;
-            alphabets_counter[c-'a']--;
+        for (char c : ransomNote.toCharArray()) {
+            if (alphabets_counter[c - 'a'] == 0)
+                return false;
+            alphabets_counter[c - 'a']--;
         }
         return true;
     }
@@ -47,21 +48,22 @@ public class RansomNote {
     public static boolean canConstruct1(String ransomNote, String magazine) {
         if (ransomNote.length() > magazine.length()) return false;
         Map<Character, Integer> map = new HashMap<>();
-        for (char ch: magazine.toCharArray()){
-            if (map.containsKey(ch)){
+        for (char ch : magazine.toCharArray()) {
+            if (map.containsKey(ch)) {
                 map.put(ch, map.get(ch) + 1);
-            }else {
+            } else {
                 map.put(ch, 1);
             }
         }
-        for (char ch: ransomNote.toCharArray()){
-            if (!map.containsKey(ch) || map.get(ch) <= 0){
+        for (char ch : ransomNote.toCharArray()) {
+            if (!map.containsKey(ch) || map.get(ch) <= 0) {
                 return false;
             }
             map.put(ch, map.get(ch) - 1);
         }
         return true;
     }
+
     public static void main(String[] args) {
         System.out.println(canConstruct1("a", "b"));
         System.out.println(canConstruct1("aa", "ab"));
