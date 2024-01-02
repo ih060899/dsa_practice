@@ -38,9 +38,10 @@ public class BuyTwoChocolates {
         int diff = money - min1 - min2;
         return diff >= 0 ? diff : money;
     }
+
     public static void main(String[] args) {
-int[] prices = {1,2,2};
-int[] prices1 = {3, 2, 3};
+        int[] prices = {1, 2, 2};
+        int[] prices1 = {3, 2, 3};
         System.out.println(buyChoco(prices, 3));
         System.out.println(buyChoco(prices1, 3));
     }
