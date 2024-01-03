@@ -43,8 +43,8 @@ package problem;
 //bank[i][j] is either '0' or '1'.
 public class NumberOfLaserBeamsInABank {
     public static void main(String[] args) {
-        System.out.println(numberOfBeams(new String[]{"011001","000000","010100","001000"}));
-        System.out.println(numberOfBeams(new String[]{"000","111","000"}));
+        System.out.println(numberOfBeams1(new String[]{"011001","000000","010100","001000"}));
+        System.out.println(numberOfBeams1(new String[]{"000","111","000"}));
     }
 
     public static int numberOfBeams(String[] bank) {
@@ -68,5 +68,24 @@ public class NumberOfLaserBeamsInABank {
             count += c - '0';
 
         return count;
+    }
+
+    public static int numberOfBeams1(String[] bank) {
+        int r1 = 0, ans = 0;
+
+        for (int i = 0; i < bank.length; i++) {
+            if (bank[i].contains("1")) {
+                int r2 = 0;
+                for (char ch : bank[i].toCharArray()) {
+                    if (ch == '1') {
+                        r2++;
+                    }
+                }
+                    ans += r1 * r2;
+                    r1 = r2;
+
+            }
+        }
+        return ans;
     }
 }

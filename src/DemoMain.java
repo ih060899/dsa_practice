@@ -1,27 +1,30 @@
+import java.util.Arrays;
+import java.util.Map;
+
 public class DemoMain {
     public static void main(String[] args) {
-        System.out.println(numberOfBeams(new String[]{"011001", "000000", "010100", "001000"}));
-        System.out.println(numberOfBeams(new String[]{"000", "111", "000"}));
+        int[] arr = {-1, 2, 1, -4};
+        int[] arr1 = {0, 0, 0};
+        System.out.println(threeSumClosest(arr, 1));
+        System.out.println(threeSumClosest(arr1, 1));
     }
 
-    public static int numberOfBeams(String[] bank) {
-        int preCountRow = 0;
-        int total = 0;
-        for (String str : bank) {
-            int currentRowCount = countRow(str);
-            if (currentRowCount == 0)
-                continue;
-            total += preCountRow * currentRowCount;
-            preCountRow = currentRowCount;
+    public static int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int closestSum = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length - 2; i++){
+            int left = i + 1, right = nums.length - 1;
+            while (left < right){
+                int currentSum = nums[i] + nums[left] + nums[right];
+                if (Math.abs(currentSum - target) < Math.abs(closestSum - target))
+                    closestSum = currentSum;
+                if (currentSum < target){
+                    left++;
+                }else {
+                    right--;
+                }
+            }
         }
-        return total;
-    }
-
-    private static int countRow(String str) {
-        int count = 0;
-        for (char ch : str.toCharArray()) {
-            count += ch - '0';
-        }
-        return count;
+        return closestSum;
     }
 }
