@@ -1,5 +1,6 @@
 package problem;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,10 +41,10 @@ import java.util.Map;
 public class MinimumNumberOfOperationsToMakeArrayEmpty {
 
     public static void main(String[] args) {
-        System.out.println(minOperations(new int[]{19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19}));
-        System.out.println(minOperations(new int[]{14, 12, 14, 14, 12, 14, 14, 12, 12, 12, 12, 14, 14, 12, 14, 14, 14, 12, 12}));
-        System.out.println(minOperations(new int[]{2, 3, 3, 2, 2, 4, 2, 3, 4}));
-        System.out.println(minOperations(new int[]{2, 1, 2, 2, 3, 3}));
+        System.out.println(minOperations2(new int[]{19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19}));
+        System.out.println(minOperations2(new int[]{14, 12, 14, 14, 12, 14, 14, 12, 12, 12, 12, 14, 14, 12, 14, 14, 14, 12, 12}));
+        System.out.println(minOperations2(new int[]{2, 3, 3, 2, 2, 4, 2, 3, 4}));
+        System.out.println(minOperations2(new int[]{2, 1, 2, 2, 3, 3}));
     }
 
     public static int minOperations(int[] nums) {
@@ -93,5 +94,28 @@ public class MinimumNumberOfOperationsToMakeArrayEmpty {
 
         // Return the total count of operations needed
         return count;
+    }
+
+    public static int minOperations2(int[] nums) {
+        Arrays.sort(nums);
+
+        int res = 0;
+        int s = 0;
+        while (s < nums.length) {
+            int e = s;
+
+            while (e < nums.length && nums[e] == nums[s]) {
+                e++;
+            }
+            int count = e - s;
+            if (count == 1)
+                return -1;
+            res += count / 3;
+
+            if (count % 3 != 0)
+                res++;
+            s = e;
+        }
+        return res;
     }
 }
