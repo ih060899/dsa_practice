@@ -129,6 +129,7 @@ public class Tree {
     }
 
     // O(n)
+    // Post Order Traversal
     private int min(Node root) {
         if (root == null)
             return Integer.MAX_VALUE;
@@ -198,7 +199,7 @@ public class Tree {
         getNodesAtDistance(root.rightChild, distance - 1, list);
     }
 
-    // Breadth First
+    // Breadth First Traversal or Level Order Traversal
     public void traverseLevelOrder(){
         for (int i = 0; i <= height(); i++) {
             for (int value: getNodesAtDistance(i)) {
