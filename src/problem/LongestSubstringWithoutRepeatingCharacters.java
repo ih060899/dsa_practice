@@ -34,6 +34,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LongestSubstringWithoutRepeatingCharacters {
+//    Initial Setup:
+//
+//    maxlength = 0, l = 0, r = 0
+//    First Iteration (r = 0):
+//
+//            s.charAt(r) = 'a'
+//            s.indexOf('a', 0) = 0 (no repeating character within the window)
+//    maxlength = Math.max(0, 0 - 0 + 1) = 1
+//    Second Iteration (r = 1):
+//
+//            s.charAt(r) = 'b'
+//            s.indexOf('b', 0) = 1 (no repeating character within the window)
+//    maxlength = Math.max(1, 1 - 0 + 1) = 2
+//    Third Iteration (r = 2):
+//
+//            s.charAt(r) = 'c'
+//            s.indexOf('c', 0) = 2 (no repeating character within the window)
+//    maxlength = Math.max(2, 2 - 0 + 1) = 3
+//    Fourth Iteration (r = 3):
+//
+//            s.charAt(r) = 'a'
+//            s.indexOf('a', 0) = 0 (repeating character found)
+//    l = 0 + 1 = 1
+//    maxlength = Math.max(3, 3 - 1 + 1) = 3
+//    Subsequent Iterations:
+//
+//    Continue adjusting l and updating maxlength as described.
     public static int lengthOfLongestSubstring(String s) {
         int maxlength = 0;
         for (int r = 0, l = 0; r < s.length(); r++) {
@@ -61,7 +88,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         String str = "abcabcbb";
         System.out.println(str.indexOf('c',3 ));
-//        System.out.println(lengthOfLongestSubstring(str));
+        System.out.println(lengthOfLongestSubstring(str));
 //        System.out.println(lengthOfLongestSubstring("bbbbb"));
 //        System.out.println(lengthOfLongestSubstring1("pwwkew"));
     }
